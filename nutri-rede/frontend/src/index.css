@@ -1,0 +1,315 @@
+/* Estilo Geral */
+body {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 80px; /* Adiciona um espaço reservado para o footer */
+}
+
+main {
+  margin-bottom: 60px;
+}
+
+/* Header */
+header {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+header .logo img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+header nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Botões de Navegação */
+header nav button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+header nav button:hover {
+  background-color: #45a049;
+}
+
+hr {
+  margin-top: 100px;
+}
+
+/* Estilo para o Container do Perfil */
+.perfil-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.perfil-foto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.perfil-foto img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #4caf50;
+  margin-bottom: 10px;
+}
+
+.foto-placeholder {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1rem;
+  border: 3px solid #4caf50;
+}
+
+.perfil-dados {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.perfil-dados h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.perfil-dados p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.perfil-dados p strong {
+  color: #333;
+}
+
+.perfil-dados button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s;
+}
+
+.perfil-dados button:hover {
+  background-color: #45a049;
+}
+
+/* Formulários */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+form input,
+form textarea,
+form select,
+form button {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #45a049;
+}
+
+/* Postagens */
+.titulo-postagens {
+  text-align: center; /* Centraliza o texto */
+  font-size: 2.5rem; /* Define o tamanho da fonte como H1 */
+  color: #000801; /* Cor do texto */
+  margin-bottom: 50px; /* Espaçamento abaixo do título */
+  margin-top: 70px;
+}
+
+.postagens {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  padding-bottom: 80px; /* Espaço suficiente para o footer */
+}
+.postagem-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; /* Garante altura uniforme */
+}
+
+.postagem-card img {
+  width: 100%;
+  height: 150px; /* Define uma altura fixa */
+  object-fit: contain; /* Ajusta a imagem para caber completamente */
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9; /* Adiciona um fundo para contraste, se necessário */
+}
+
+
+.postagem-card h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+  white-space: nowrap; /* Impede quebra de linha no título */
+  overflow: hidden; /* Oculta texto extra */
+  text-overflow: ellipsis; /* Adiciona reticências no fim do texto */
+}
+
+.postagem-card p {
+  color: #666;
+  margin-bottom: 10px;
+  text-align: left; /* Mantém os textos alinhados à esquerda */
+}
+
+.postagem-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.editar-btn,
+.excluir-btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3
+}
+
+.editar-btn:hover,
+.excluir-btn:hover {
+  background-color: #45a049;
+}
+
+/* Modais */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.modal-content h3 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.modal-content button {
+  margin-top: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.modal-content button:hover {
+  background-color: #45a049;
+}
+
+/* Alerta */
+.alerta {
+  background-color: #f4f4f4;
+  border-left: 5px solid #4caf50;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Estilo do Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 100;
+}

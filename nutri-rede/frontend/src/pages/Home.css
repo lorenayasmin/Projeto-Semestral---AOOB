@@ -1,0 +1,112 @@
+/* Estilo geral do container da home */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding: 20px;
+  padding-bottom: 80px;
+  background-color: #f9f9f9;
+}
+
+/* Estilo para a seção de história */
+.historia {
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.historia h1 {
+  font-size: 2rem;
+  color: #4caf50;
+}
+
+.historia p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+/* Estilo para a seção de postagens (título centralizado) */
+.postagens-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.postagens h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Grid para os cards de postagens */
+.postagens-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  width: 100%;
+  justify-items: center;
+  margin-bottom: 80px;
+}
+
+.postagem-card {
+  display: flex; /* Torna o conteúdo do card flexível */
+  flex-direction: column; /* Alinha os elementos na vertical */
+  justify-content: space-between; /* Distribui o espaço igualmente */
+  align-items: center; /* Centraliza os itens horizontalmente */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 300px;
+}
+
+.postagem-imagem {
+  max-width: 100%;
+  height: 150px; /* Altura fixa para imagens */
+  object-fit: cover; /* Ajusta a imagem sem distorcer */
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.postagem-card h3 {
+  font-size: 1.2rem;
+  color: #4caf50;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.postagem-card p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 8px;
+  text-align: center; /* Centraliza os textos */
+}
+
+.postagem-card:last-child {
+  margin-bottom: 0;
+}
+
+/* Estilo do Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 100;
+}
